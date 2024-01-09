@@ -189,7 +189,6 @@ export default {
   margin-right: 5px;
   font-size: 15px;
 }
-
 .brands {
   padding-left: 30px;
 }

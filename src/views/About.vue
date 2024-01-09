@@ -12,7 +12,6 @@
         Our mission is to provide quality goods with exceptional service to our valued customers.
       </p>
     </section>
-
     <section class="team-section">
       <h1>Meet Our Team</h1>
       <div class="team-member" v-for="member in team" :key="member.id">

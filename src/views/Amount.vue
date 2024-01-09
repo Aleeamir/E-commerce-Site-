@@ -14,7 +14,6 @@ export default {
   },
 };
 </script>
-  
 <style scoped>
 .amount-page {
   max-width: 600px;

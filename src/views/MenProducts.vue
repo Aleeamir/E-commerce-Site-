@@ -89,21 +89,14 @@ export default {
 }
 
 .product-block {
-  /* width: 200px;
-  margin: 10px;
-  text-align: center; */
+  
   width: calc(33.33% - 20px); /* 33.33% to display 3 items in one row, adjust margin as needed */
   margin: 10px;
   text-align: center;
 }
 
 .product-block img {
-  /* width: 100%;
-  max-height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  padding: 20px;
-  overflow: hidden; */
+ 
   width: 200px;
   max-height: 100%;
   object-fit: cover;
@@ -115,7 +108,6 @@ export default {
 
 .product-block h3 {
   margin-top: 10px;
-  /* Adjust as needed for spacing between image and text */
   font-size: 16px;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -144,13 +136,11 @@ export default {
     font-size: 16px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    /* margin-left: 43px; */
     text-align: center;
   }
   .product-block p {
     font-size: 14px;
     color: #888;
-    /* margin-left: 52px; */
     text-align: center;
 }
 }

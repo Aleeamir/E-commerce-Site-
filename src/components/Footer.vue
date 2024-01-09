@@ -18,7 +18,6 @@ export default {
             <h1>DNK</h1>
             <span>The best look anytime, anywhere</span>
           </div>
-
           <div class="first">
             <div class="links">
               <h6 class="fw-bold" style="font-size: 20px; color: white;">For Her</h6>

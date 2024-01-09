@@ -44,6 +44,7 @@
                     <router-link to="/Accessories"><button class="button-1">Shop Now</button></router-link>
                 </div>
             </div>
+            
             <!-- <div class="fourthview">
             <div class="block-container">
                 <div class="white-block" v-for="(text, index) in texts" :key="index">

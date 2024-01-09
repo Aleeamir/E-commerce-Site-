@@ -45,6 +45,7 @@ import MenProducts from '@/views/MenProducts.vue';
           and individuality of every woman. Elevate your style and embrace your uniqueness with us today</p>
       </div>
       <div class="lower-image">
+        
         <MenProducts :products="MenProducts" />
       </div>
     </div>

@@ -12,7 +12,6 @@ import ProductList from '@/views/ProductList.vue';
       <div class="info">
         <RouterLink to="/Accessories" style="text-decoration: none; color: white; font-size: 15px;">Accessories
         </RouterLink>
-
         <span style="padding-left: 70px;">(17)</span> <br>
         <RouterLink to="/Men" style="text-decoration: none; color: white; font-size: 15px;padding-right: 125px;">Men
         </RouterLink>

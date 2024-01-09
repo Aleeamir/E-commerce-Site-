@@ -124,13 +124,11 @@ export default {
     font-size: 16px;
     color: white;
     font-family: 'Roboto', sans-serif;
-    /* margin-left: 43px; */
     text-align: center;
   }
   .product-block p {
     font-size: 14px;
     color: #888;
-    /* margin-left: 52px; */
     text-align: center;
 }
 }
