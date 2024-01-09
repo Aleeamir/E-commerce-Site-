@@ -1,114 +1,3 @@
-<!-- <template>
-  <div class="product-container">
-    <div v-for="product in products" :key="product.id" @click="navigateToProductDetails(product.id)">
-      <img :src="product.image" alt="Product Image" />
-      <h3>{{ product.name }}</h3>
-      <p>{{ product.price }}</p>
-    </div>
-  </div>
-</template>
-  
-<script>
-export default {
-
-  methods: {
-    navigateToProductDetails(productId) {
-      this.$router.push({ name: 'productDetails', params: { id: productId } });
-    },
-  },
-  data() {
-    return {
-      products: [
-        {
-          id: 1,
-          name: "Jeans Pent",
-          price: "$19.99",
-          image: "src/assets/Images/p1.webp",
-          description: 'Description 1'
-        },
-        {
-          id: 2,
-          name: "Casual Shirt",
-          price: "$29.99",
-          image: "src/assets/Images/p2.jpg",
-          description: 'Description 1'
-        },
-        {
-          id: 3,
-          name: "Sweat Shirts",
-          price: "$49.99",
-          image: "src/assets/Images/men2.webp",
-          description: 'Description 1'
-        },
-        {
-          id: 4,
-          name: "Casual Dress",
-          price: "$49.99",
-          image: "src/assets/Images/men3.avif",
-          description: 'Description 1'
-        },
-        {
-          id: 5,
-          name: "Dress Suit",
-          price: "$49.99",
-          image: "src/assets/Images/men4.jpg",
-          description: 'Description 1'
-        },
-        {
-          id: 6,
-          name: "Party Set",
-          price: "$49.99",
-          image: "src/assets/Images/men5.webp",
-          description: 'Description 1'
-        },
-      ],
-    };
-  },
-};
-
-</script>
-  
-<style scoped>
-.product-container {
-
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 200px;
-  max-width: 100%;
-
-}
-
-.product-block {
-
-  width: calc(33.33% - 20px);
-  margin: 10px;
-  text-align: center;
-}
-
-.product-block img {
-  width: 60%;
-  max-height: 150px;
-  object-fit: cover;
-  border-radius: 100px;
-  padding: 20px;
-  overflow: hidden;
-}
-
-.product-block h3 {
-  margin-top: 10px;
-  font-size: 16px;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
-.product-block p {
-  font-size: 14px;
-  color: #888;
-}
-</style>
-   -->
-   <!-- Home.vue -->
-
 <template>
   <div class="product-container">
     <div class="pro" v-for="product in products" :key="product.id" @click="navigateToProductDetails(product.id)">
@@ -180,48 +69,7 @@ export default {
 </script>
 
 <style scoped>
-/* .product-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
 
-.product-block {
-  width: calc(100.33% - 13px);
-  margin: 25px;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 40px;
-  padding: 10px;
-  background-color: rgb(10, 10, 114);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.product-block:hover {
-  transform: scale(1.05);
-}
-
-.product-block img {
-  width: 100%;
-  max-height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.product-block h3 {
-  font-size: 18px;
-  color: #333;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 8px;
-}
-
-.product-block p {
-  font-size: 16px;
-  color: #888;
-} */
 .pro {
   padding: 20px;
   width: calc(100.33% - 13px);
@@ -256,12 +104,13 @@ export default {
   border-radius: 8px;
   padding: 20px;
   overflow: hidden; */
-  width: 60%;
+  width: 200px;
   max-height: 100%;
   object-fit: cover;
-  border-radius: 100px;
+  border-radius: 75px;
   padding: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .product-block h3 {
@@ -275,5 +124,34 @@ export default {
 .product-block p {
   font-size: 14px;
   color: #888;
+}
+@media only screen and (max-width: 600px) {
+  .product-block img {
+    width: 150px;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 75px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  }
+  .product-container .pro {
+    /* margin-left: -58px; */
+    align-items: center;
+  }
+  .product-block h3 {
+    margin-top: -2px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /* margin-left: 43px; */
+    text-align: center;
+  }
+  .product-block p {
+    font-size: 14px;
+    color: #888;
+    /* margin-left: 52px; */
+    text-align: center;
+}
 }
 </style>

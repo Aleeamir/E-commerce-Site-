@@ -1,3 +1,4 @@
+
 <script>
 export default {
 
@@ -12,7 +13,7 @@ export default {
     <section class="links-section">
       <div class="container">
 
-        <div class="row">
+        <div class="row-data">
           <div class="social-media-left">
             <h1>DNK</h1>
             <span>The best look anytime, anywhere</span>
@@ -43,12 +44,7 @@ export default {
           <div class="third">
             <div class="links">
               <h6 class="fw-bold" style="font-size: 20px; color: white;">Subscribe</h6>
-              <input type="text" v-model="input" placeholder="Search Here..." style="float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;" />
+              <div class="search"><input type="text" v-model="input" placeholder="Search Here..." /></div>
               <button class="button-1" v-on:click="">Subscribe</button>
             </div>
           </div>
@@ -61,6 +57,15 @@ export default {
 
 
 <style scoped>
+.search {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
 .social-media-left h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -78,7 +83,7 @@ h5 {
   color: white;
 }
 
-.row {
+.row-data {
   display: flex;
   flex-direction: row;
   padding-top: 2%;
@@ -219,4 +224,44 @@ h5 {
   background-color: #c85000;
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1000px) {
+  .fw-bold h6 {
+    font-size: 5px;
+  }
+
+  .links p {
+    font-size: 12px;
+  }
+
+  .search {
+    float: right;
+    padding: 3px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: 695px) {
+    .row-data {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 367px) {
+    .fifthview h5 {
+      font-size: 20px;
+    }
+    .search {
+      margin-right: 62px;
+    }
+    .button-1 {
+      border-radius: 10rem;
+      font-size: 12px;
+      margin-left: -24px;
+      margin-top: 10px;
+    }
+  }
 }</style>

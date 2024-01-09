@@ -1,35 +1,33 @@
 <template>
     <nav>
         <div class="nav-inner">
+
             <div class="logo">
-                <router-link to="/">
+                <router-link to="/" class="logo-link">
                     <img src="@/assets/Images/logo.png" alt="Website Logo" />
                 </router-link>
-            </div>
-            <b-navbar-nav style="cursor: pointer;">
-                <div class="inner-nav">
-                    <RouterLink to="/"
-                        style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">Home
-                    </RouterLink>
-                    <RouterLink to="/Accessories"
-                        style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">
-                        Accessories</RouterLink>
-
-                    <RouterLink to="/Women"
-                        style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">
-                        Women
-                    </RouterLink>
-                    <RouterLink to="/Men"
-                        style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">Men
-                    </RouterLink>
+                <!-- @click="toggleMobileMenu" -->
+                <div class="hamburger-icon" @click="toggleMobileMenu">
+                    <!-- <img src="@/assets/Images/hamburger.png" alt="Hamburger Icon"> -->
+                    <i class="fa-solid fa-bars"></i>
                 </div>
+            </div>
+            <div class="inner-nav" v-if="isOpen">
 
-
-
-
-            </b-navbar-nav>
-
-
+                <RouterLink to="/"
+                    style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">Home
+                </RouterLink>
+                <RouterLink to="/Accessories"
+                    style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">
+                    Accessories</RouterLink>
+                <RouterLink to="/Women"
+                    style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">
+                    Women
+                </RouterLink>
+                <RouterLink to="/Men"
+                    style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">Men
+                </RouterLink>
+            </div>
 
             <div class="sidebar">
 
@@ -38,29 +36,61 @@
                 <RouterLink to="/Amount" style="text-decoration: none; color: white;">$0.00</RouterLink>
 
             </div>
+
         </div>
     </nav>
 </template>
 
+<script>
+export default {
+    data() {
+        return {
+            isOpen: false
+        }
+    },
+    methods: {
+        toggleMobileMenu(e) {
+            console.log(e)
+            this.isOpen = !this.isOpen
+        }
+    }
+}
+
+</script>
+
+
 <style scoped>
+.nav-bar-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .sidebar {
     font-family: 'Roboto', sans-serif;
+
+}
+
+.hamburger-icon {
+    display: none;
 }
 
 .nav-inner {
     background-color: rgb(10, 10, 114);
 }
-
 nav .nav-inner {
-    height: 90px;
+    /* height: 90px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: auto;
 }
+.logo {
+    padding: 20px;
+}
 
-.nav .nav-inner .b-navbar-nav {
+.nav .nav-inner {
 
     background-color: white;
     position: fixed;
@@ -74,23 +104,109 @@ nav .nav-inner {
 }
 
 * {
-    margin: 13px;
+    /* margin: 13px; */
+    /* padding: 13px; */
     padding: 0;
     box-sizing: border-box;
-    /* margin-top: 40px; */
+}
+/* nav .inner-nav {
+    padding: 0 20px;
+} */
+.inner-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 15px;
+}
+.sidebar a {
+    text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 35px;
+  
+  /* justify-content: space-between; */
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767.98px) {
-    .inner-nav {
-        display: none;
-    }
-
-    .sidebar {
+@media only screen and (max-width: 966px) {
+    nav .nav-inner {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex: 1;
+        flex-direction: column;
+        /* height: 195px; */
     }
 
+    .nav .nav-inner .b-navbar-nav {
+        margin-top: 20px;
+    }
+
+    /* .inner-nav {
+        margin-top: -6px; 
+        padding: 20px;
+         justify-content: space-between;
+    } */
+    .sidebar {
+        padding-top: 20px;
+    }
+
+    @media only screen and (max-width: 441px) {
+        /* nav .nav-inner {
+            height: 220px;
+        } */
+
+        nav .nav-inner {
+            display: flex;
+            flex-direction: column;
+            /* height: 195px; */
+        }
+
+        .nav .nav-inner .b-navbar-nav {
+            margin-top: 20px;
+        }
+
+        .inner-nav {
+            margin-top: -6px;
+        }
+
+        .hamburger-icon {
+            display: block;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo .logo-link {
+            width: 300px;
+            /* Set the desired width */
+            height: auto;
+        }
+
+        .inner-nav {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(10, 10, 114);
+            background-size: cover;
+            /* align-items: center; */
+            justify-content: center;
+            width: 100%;
+        }
+
+        .hamburger-icon i {
+            color: white;
+            font-size: 30px;
+        }
+        /* .logo .logo-link {
+            width: 200px;
+  max-height: 100%;
+        } */
+        /* nav .inner-nav {
+        height: 0px;
+    } */
+    .nav .inner-nav {
+        height: 0px;
+    }
+    }
 }
 </style>

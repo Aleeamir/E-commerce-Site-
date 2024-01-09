@@ -73,4 +73,40 @@ export default {
   border-radius: 50%;
   object-fit: cover;
 }
+@media screen and ( max-width: 422px) {
+  .top h1 {
+    font-size: 27px;
+    margin-top: 40px;
+  }
+  .top p {
+    font-size: 17px;
+    margin-top: 25px;
+  }
+  .company-section h1 {
+    margin-top: 40px;
+    font-size: 27px;
+    text-align: center;
+  }
+  .company-section p {
+    font-size: 17px;
+    margin-top: 25px;
+  }
+  .team-section h1 {
+    font-size: 27px;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .team-member img {
+    width: 229px;
+    height: 214px;
+  }
+  .team-member h3 {
+    font-size: 27px;
+    margin-top: 20px;
+  }
+  .company-section p {
+    text-align: center;
+  }
+}
 </style>

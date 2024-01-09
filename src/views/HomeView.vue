@@ -4,61 +4,67 @@
 
 </script>
 <template>
-    <div class="second">
-        <div class="home">
-            <h1> Raining Offers For Hot Summer!</h1>
-            <p>25% Off On All Products</p>
+    <div class="container">
+        <div class="second">
+            <div class="home">
+                <h1> Raining Offers For Hot Summer!</h1>
+                <p>25% Off On All Products</p>
 
-            <router-link to="/Accessories"><button class="button-1">Shop Now</button></router-link>
-            <router-link to="/About"><button class="button-1" v-on:click="" style="margin-left: 10px;">Find
-                    More</button></router-link>
-        </div>
-
-        <div class="image-container">
-            <div class="image-wrapper">
-                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/women-fashion-free-img.jpg" alt="Image 1">
-            </div>
-
-            <div class="image-wrapper">
-                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/men-fashion-free-img.jpg" alt="Image 2">
-            </div>
-
-            <div class="image-wrapper">
-                <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/footwear-free-img.jpg" alt="Image 3">
-            </div>
-        </div>
-        <div class="thirdview">
-            <div class="insidetext">
-                <p>Limited Time Offer</p>
-                <h4>Space Edition</h4>
-                <p style="font-size: 20px;">An online store is a digital platform that enables users to browse, select, and
-                    purchase products or services over the internet. It provides a convenient and accessible way for
-                    consumers to shop from the comfort of their homes, offering a wide range of goods with secure online
-                    transactions.</p>
-                <p style="font-size: 25px;">Buy This T-shirt At 20% Discount, Use Code OFF20</p>
                 <router-link to="/Accessories"><button class="button-1">Shop Now</button></router-link>
+                <router-link to="/About"><button class="button-1" v-on:click="" style="margin-left: 10px;">Find
+                        More</button></router-link>
             </div>
-        </div>
-        <div class="fourthview">
+
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/women-fashion-free-img.jpg"
+                        alt="Image 1">
+                </div>
+
+                <div class="image-wrapper">
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/men-fashion-free-img.jpg"
+                        alt="Image 2">
+                </div>
+
+                <div class="image-wrapper">
+                    <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/footwear-free-img.jpg"
+                        alt="Image 3">
+                </div>
+            </div>
+            <div class="thirdview">
+                <div class="insidetext">
+                    <h1>Limited Time Offer</h1>
+                    <h4>Space Edition</h4>
+                    <p>An online store is a digital platform that enables users to browse, select,
+                        and
+                        purchase products or services over the internet. It provides a convenient and accessible way for
+                        consumers to shop from the comfort of their homes, offering a wide range of goods with secure online
+                        transactions.</p>
+                    <p style="font-size: 25px;">Buy This T-shirt At 20% Discount, Use Code OFF20</p>
+                    <router-link to="/Accessories"><button class="button-1">Shop Now</button></router-link>
+                </div>
+            </div>
+            <!-- <div class="fourthview">
             <div class="block-container">
                 <div class="white-block" v-for="(text, index) in texts" :key="index">
                     {{ text }}
                 </div>
 
             </div>
+        </div> -->
         </div>
-
     </div>
 </template>
 <script>
-export default {
+// export default {
 
-    data() {
-        return {
-            texts: ['Worldwide Shipping', 'Best Quality', 'Best Offers', 'Secure Payments'],
-        };
-    },
-};
+//     data() {
+//         return {
+//             texts: ['Worldwide Shipping', 'Best Quality', 'Best Offers', 'Secure Payments'],
+//         };
+//     },
+// };
+
 </script>
 
 
@@ -93,6 +99,11 @@ export default {
     background: transparent;
 }
 
+.insidetext p {
+    font-size: 20px;
+    color: white;
+}
+
 .home p {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
@@ -111,7 +122,7 @@ export default {
     padding-bottom: 40px;
 }
 
-.insidetext p {
+.insidetext h1 {
     font-size: 25px;
     padding-top: 60px;
     font-family: 'Roboto', sans-serif;
@@ -183,6 +194,12 @@ h4 {
     width: auto;
 }
 
+body {
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* Prevents line breaks */
+}
+
 .button-1:hover,
 .button-1:focus {
     background-color: #fb8332;
@@ -207,6 +224,7 @@ h4 {
     margin-top: 20px;
     padding-bottom: 80px;
     background-color: rgb(10, 10, 114);
+    margin-bottom: 60px;
 }
 
 .image-wrapper img {
@@ -222,5 +240,84 @@ h4 {
     color: black;
     margin-left: 50px;
     font-family: 'Roboto', sans-serif;
+}
+.image-wrapper:hover {
+    animation: forwards;
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .image-wrapper img {
+        width: 250px;
+        height: 263px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .image-container {
+        padding-top: 60px;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        margin-top: 20px;
+        padding-bottom: 80px;
+        background-color: rgb(10, 10, 114);
+
+    }
+
+    .image-wrapper img {
+        margin-top: 40px;
+
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home p {
+        font-size: 25px;
+        padding-left: -20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .insidetext h1 {
+        font-size: 30px;
+        /* text-align: center; */
+    }
+
+    .insidetext h4 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .insidetext p {
+        font-size: 13px;
+        color: white;
+        text-align: center;
+    }
+    .button-1 {
+        align-items: center;
+        font-size: 12px;
+        border-radius: 4.25rem;
+        /* margin-right: 40%; */
+    }
+    .container {
+        position: relative;
+    }
+    .home h1 {
+    padding-right: 1%;
+    margin-left: 1px;
+    font-size: 22px;
+}
+.home p {
+    font-size: 18px;
+    margin-top: 26px;
+    margin-left: 13px;
+}
+.home .button-1 {
+    margin-left: 3px;
+}
 
 }</style>

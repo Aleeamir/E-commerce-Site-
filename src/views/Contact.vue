@@ -90,4 +90,14 @@ export default {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+@media screen and ( max-width: 422px) {
+    .contact-form {
+        max-width: 351px;
+        padding: 94px;
+    }
+    .form-button {
+        padding: 7px 23px;
+        margin-left: 40%;
+    }
+}
 </style>

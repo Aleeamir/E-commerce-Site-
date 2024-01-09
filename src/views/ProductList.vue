@@ -85,12 +85,13 @@ export default {
 }
 
 .product-block img {
-  width: 60%;
+  width: 200px;
   max-height: 100%;
   object-fit: cover;
-  border-radius: 100px;
+  border-radius: 75px;
   padding: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .product-block h3 {
@@ -103,5 +104,34 @@ export default {
 .product-block p {
   font-size: 14px;
   color: #888;
+}
+@media only screen and (max-width: 600px) {
+  .product-block img {
+    width: 150px;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 75px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  }
+  .product-container .pro {
+    /* margin-left: -58px; */
+    align-items: center;
+  }
+  .product-block h3 {
+    margin-top: -2px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /* margin-left: 43px; */
+    text-align: center;
+  }
+  .product-block p {
+    font-size: 14px;
+    color: #888;
+    /* margin-left: 52px; */
+    text-align: center;
+}
 }
 </style>

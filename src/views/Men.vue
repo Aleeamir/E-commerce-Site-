@@ -4,10 +4,10 @@ import MenProducts from '@/views/MenProducts.vue';
 <template>
   <div class="cat">
     <div class="side">
-      <input type="text" v-model="input" placeholder="Search Here..."
-        style="float: right;padding: 6px;margin-top: 8px;margin-right: 16px;border: none;font-size: 17px;" />
-      <h1 style="font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">Filter of price</h1>
-      <h1 style="font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">Categories</h1>
+      <div class="search">
+      <input type="text" v-model="input" placeholder="Search Here..."/></div>
+      <h1>Filter of price</h1>
+      <h1>Categories</h1>
       <div class="info">
         <RouterLink to="/Accessories" style="text-decoration: none; color: white; font-size: 15px;">Accessories
         </RouterLink>
@@ -15,14 +15,13 @@ import MenProducts from '@/views/MenProducts.vue';
         <span style="padding-left: 70px;">(17)</span> <br>
         <RouterLink to="/Men" style="text-decoration: none; color: white; font-size: 15px;padding-right: 125px;">Men
         </RouterLink>
-        <span style="padding-right: 10px;">(8)</span><br>
+        <span style="padding-right: 5px;">(8)</span><br>
         <RouterLink to="/Women" style="text-decoration: none; color: white; font-size: 15px;padding-right: 100px;">Women
         </RouterLink>
         <span>(11)</span>
       </div>
       <div class="brands">
-        <h1 style="color: white; font-family: 'Roboto', sans-serif; font-size: 25px; padding-top: 30px; ">Our Best Sellers
-        </h1>
+        <h1>Our Best Sellers</h1>
       </div>
       <div class="best-sellers-container">
         <div v-for="seller in bestSellers" :key="seller.id" class="seller-profile">
@@ -69,6 +68,26 @@ export default {
 };
 </script>
 <style scoped>
+.search {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+.side h1 {
+  font-size: 20px;
+   color: white; 
+   font-family: 'Roboto', sans-serif; 
+   padding-top: 20px;
+}
+.brands h1 {
+  color: white; 
+  font-family: 'Roboto', sans-serif; 
+  font-size: 25px; 
+  padding-top: 30px;
+}
 .upper h1 {
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -168,4 +187,39 @@ export default {
 .brands {
   padding-left: 30px;
 }
+@media only screen and (max-width: 600px) {
+  .search {
+    margin-top: 10px;
+    float: right;
+    padding: 1px;
+    /* margin-top: -22px; */
+    margin-right: 5px;
+    border: none;
+    font-size: 13px;
+    margin-left: 2px;
+  }
+  .side h1 h2 {
+    font-size: 15px;
+    color: white;
+    font-family: Roboto, sans-serif;
+    padding-top: 20px;
+    margin-left: 5px;
+  }
+  .brands h1 {
+    font-size: 20px;
+  }
+  .upper-text h1 {
+    font-size: 18px;
+  }
+  .upper-text p {
+    font-size: 12px;
+  }
+  .cat {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 20px;
+    
+  }
+}
+
 </style>

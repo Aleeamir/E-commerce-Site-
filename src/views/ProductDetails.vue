@@ -144,6 +144,8 @@ export default {
   text-align: center;
   padding-top: 20px; 
 }
+
+
 </style>
 
 
