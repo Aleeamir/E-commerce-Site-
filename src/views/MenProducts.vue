@@ -1,10 +1,12 @@
 <template>
   <div class="product-container">
-    <div class="pro" v-for="product in products" :key="product.id" @click="navigateToProductDetails(product.id)">
-      <div class="product-block">
-        <img :src="product.image" alt="Product Image" />
-        <h3>{{ product.name }}</h3>
-        <p>{{ product.price }}</p>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+      <div class="pro" v-for="product in products" :key="product.id" @click="navigateToProductDetails(product.id)">
+        <div class="product-block">
+          <img :src="product.image" alt="Product Image" />
+          <h3>{{ product.name }}</h3>
+          <p>{{ product.price }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -20,7 +22,7 @@ export default {
   data() {
     return {
       products: [
-      {
+        {
           id: 1,
           name: "Jeans Pent",
           price: "$19.99",
@@ -69,12 +71,15 @@ export default {
 </script>
 
 <style scoped>
-
 .pro {
   padding: 20px;
-  width: calc(100.33% - 13px);
+  /* width: calc(100.33% - 13px); */
+  display: flex;
+  flex-direction: row;
+
 
 }
+
 .product-container .pro {
   /* display: flex;
   justify-content: space-around;
@@ -89,14 +94,14 @@ export default {
 }
 
 .product-block {
-  
-  width: calc(33.33% - 20px); /* 33.33% to display 3 items in one row, adjust margin as needed */
+
+  /* width: calc(33.33% - 20px); */
   margin: 10px;
   text-align: center;
 }
 
 .product-block img {
- 
+
   width: 200px;
   max-height: 100%;
   object-fit: cover;
@@ -117,20 +122,23 @@ export default {
   font-size: 14px;
   color: #888;
 }
+
 @media only screen and (max-width: 600px) {
   .product-block img {
     width: 150px;
-  max-height: 100%;
-  object-fit: cover;
-  border-radius: 75px;
-  padding: 20px;
-  overflow: hidden;
-  cursor: pointer;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 75px;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
   }
+
   .product-container .pro {
     /* margin-left: -58px; */
     align-items: center;
   }
+
   .product-block h3 {
     margin-top: -2px;
     font-size: 16px;
@@ -138,10 +146,10 @@ export default {
     font-family: 'Roboto', sans-serif;
     text-align: center;
   }
+
   .product-block p {
     font-size: 14px;
     color: #888;
     text-align: center;
-}
-}
-</style>
+  }
+}</style>

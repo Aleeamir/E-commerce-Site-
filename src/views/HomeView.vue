@@ -103,6 +103,8 @@
 .insidetext p {
     font-size: 20px;
     color: white;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .home p {
@@ -297,6 +299,8 @@ body {
         font-size: 13px;
         color: white;
         text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .button-1 {
         align-items: center;

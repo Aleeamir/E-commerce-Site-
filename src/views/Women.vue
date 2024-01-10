@@ -69,6 +69,15 @@ export default {
 };
 </script>
 <style scoped>
+/* * {
+  ::selection {
+  background-color: #f7f9fb; 
+  color: rgb(12, 1, 1); 
+}
+} */
+.upper-text {
+  margin-top: 30px;
+}
 .search {
   float: right;
   padding: 6px;
@@ -129,6 +138,7 @@ export default {
   margin-left: 20px;
   padding: 20px;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .side h2 {

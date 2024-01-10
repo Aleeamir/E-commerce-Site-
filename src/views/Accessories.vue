@@ -72,6 +72,9 @@ export default {
 };
 </script>
 <style scoped>
+.upper-text {
+  margin-top: 30px;
+}
 .brands h1 {
   color: white; 
   font-family: 'Roboto', sans-serif; 
@@ -131,6 +134,7 @@ export default {
   margin-left: 20px;
   padding: 20px;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .side h2 {

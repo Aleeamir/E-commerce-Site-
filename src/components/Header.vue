@@ -17,7 +17,7 @@
                 <RouterLink to="/"
                     style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">Home
                 </RouterLink>
-                <RouterLink to="/Accessories"
+                <RouterLink to="/Accessories" 
                     style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">
                     Accessories</RouterLink>
                 <RouterLink to="/Women"
