@@ -6,9 +6,7 @@
                 <router-link to="/" class="logo-link">
                     <img src="@/assets/Images/logo.png" alt="Website Logo" />
                 </router-link>
-                <!-- @click="toggleMobileMenu" -->
                 <div class="hamburger-icon" @click="toggleMobileMenu">
-                    <!-- <img src="@/assets/Images/hamburger.png" alt="Hamburger Icon"> -->
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
