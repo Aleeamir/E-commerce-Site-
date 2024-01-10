@@ -69,12 +69,6 @@ export default {
 };
 </script>
 <style scoped>
-/* * {
-  ::selection {
-  background-color: #f7f9fb; 
-  color: rgb(12, 1, 1); 
-}
-} */
 .upper-text {
   margin-top: 30px;
 }

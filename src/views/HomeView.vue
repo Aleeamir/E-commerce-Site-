@@ -1,7 +1,4 @@
 <script setup>
-// import ProductList from '@/views/ProductList.vue';
-// import MenProducts from '@/views/MenProducts.vue';
-
 </script>
 <template>
     <div class="container">
@@ -44,31 +41,9 @@
                     <router-link to="/Accessories"><button class="button-1">Shop Now</button></router-link>
                 </div>
             </div>
-            
-            <!-- <div class="fourthview">
-            <div class="block-container">
-                <div class="white-block" v-for="(text, index) in texts" :key="index">
-                    {{ text }}
-                </div>
-
-            </div>
-        </div> -->
         </div>
     </div>
 </template>
-<script>
-// export default {
-
-//     data() {
-//         return {
-//             texts: ['Worldwide Shipping', 'Best Quality', 'Best Offers', 'Secure Payments'],
-//         };
-//     },
-// };
-
-</script>
-
-
 <style scoped>
 .image-wrapper img {
     border-radius: 20%;
@@ -77,8 +52,6 @@
 .block-container {
     display: flex;
     font-family: 'Roboto', sans-serif;
-
-
 }
 
 .second {
@@ -200,7 +173,6 @@ h4 {
 body {
     overflow-x: scroll;
     white-space: nowrap;
-    /* Prevents line breaks */
 }
 
 .button-1:hover,
@@ -244,6 +216,7 @@ body {
     margin-left: 50px;
     font-family: 'Roboto', sans-serif;
 }
+
 .image-wrapper:hover {
     animation: forwards;
 
@@ -302,27 +275,32 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
+
     .button-1 {
         align-items: center;
         font-size: 12px;
         border-radius: 4.25rem;
         /* margin-right: 40%; */
     }
+
     .container {
         position: relative;
     }
+
     .home h1 {
-    padding-right: 1%;
-    margin-left: 1px;
-    font-size: 22px;
-}
-.home p {
-    font-size: 18px;
-    margin-top: 26px;
-    margin-left: 13px;
-}
-.home .button-1 {
-    margin-left: 3px;
-}
+        padding-right: 1%;
+        margin-left: 1px;
+        font-size: 22px;
+    }
+
+    .home p {
+        font-size: 18px;
+        margin-top: 26px;
+        margin-left: 13px;
+    }
+
+    .home .button-1 {
+        margin-left: 3px;
+    }
 
 }</style>

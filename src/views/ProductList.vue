@@ -119,7 +119,6 @@ export default {
   }
 
   .product-container .pro {
-    /* margin-left: -58px; */
     align-items: center;
   }
 

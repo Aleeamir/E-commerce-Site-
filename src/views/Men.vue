@@ -196,7 +196,6 @@ export default {
     margin-top: 10px;
     float: right;
     padding: 1px;
-    /* margin-top: -22px; */
     margin-right: 5px;
     border: none;
     font-size: 13px;
@@ -214,14 +213,10 @@ export default {
   }
   .upper-text h1 {
     font-size: 18px;
-    /* margin-top: 30px; */
   }
   .upper-text p {
     font-size: 12px;
   }
-  /* .upper-text {
-    margin-top: 300px;
-  } */
   .cat {
     display: flex;
     flex-direction: column-reverse;

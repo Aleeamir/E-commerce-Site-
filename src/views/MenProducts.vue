@@ -73,7 +73,6 @@ export default {
 <style scoped>
 .pro {
   padding: 20px;
-  /* width: calc(100.33% - 13px); */
   display: flex;
   flex-direction: row;
 
@@ -81,21 +80,13 @@ export default {
 }
 
 .product-container .pro {
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: nowrap; */
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap;  */
   justify-content: space-around;
   align-items: center;
-  /* padding-left: 200px; */
 }
 
 .product-block {
-
-  /* width: calc(33.33% - 20px); */
   margin: 10px;
   text-align: center;
 }
@@ -135,7 +126,6 @@ export default {
   }
 
   .product-container .pro {
-    /* margin-left: -58px; */
     align-items: center;
   }
 
@@ -152,4 +142,5 @@ export default {
     color: #888;
     text-align: center;
   }
-}</style>
+}
+</style>

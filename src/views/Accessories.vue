@@ -7,7 +7,8 @@ import MenProducts from '@/views/MenProducts.vue';
   <div class="cat">
     <div class="side">
       <div class="search">
-      <input type="text" v-model="input" placeholder="Search Here..."/></div>
+        <input type="text" v-model="input" placeholder="Search Here..." />
+      </div>
       <h1>Filter of price</h1>
       <h1>Categories</h1>
       <div class="info">
@@ -75,26 +76,30 @@ export default {
 .upper-text {
   margin-top: 30px;
 }
+
 .brands h1 {
-  color: white; 
-  font-family: 'Roboto', sans-serif; 
-  font-size: 25px; 
-  padding-top: 30px; 
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  padding-top: 30px;
 }
+
 .search {
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    border: none;
-    font-size: 17px;
-  }
-  .side h1 {
-    font-size: 20px; 
-    color: white; 
-    font-family: 'Roboto', sans-serif; 
-    padding-top: 20px;
-  }
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.side h1 {
+  font-size: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+}
+
 .upper h1 {
   font-family: 'Roboto', sans-serif;
   color: white;
@@ -193,9 +198,11 @@ export default {
   margin-right: 5px;
   font-size: 15px;
 }
+
 .brands {
   padding-left: 30px;
 }
+
 @media only screen and (max-width: 600px) {
   .search {
     float: right;
@@ -207,6 +214,7 @@ export default {
     margin-left: 2px;
     margin-top: 10px;
   }
+
   .side h1 h2 {
     font-size: 15px;
     color: white;
@@ -214,27 +222,25 @@ export default {
     padding-top: 20px;
     margin-left: 5px;
   }
+
   .brands h1 {
     font-size: 20px;
   }
+
   .upper-text h1 {
     font-size: 18px;
   }
+
   .upper-text p {
     font-size: 12px;
   }
-  /* .side {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: -200px;
-  } */
+
   .cat {
     display: flex;
     flex-direction: column-reverse;
     margin-right: 20px;
-    
+
   }
 
 }
-
 </style>
