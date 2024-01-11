@@ -1,24 +1,17 @@
 <template>
-    <!-- Your other content here -->
-
-    <!-- Render Desktop Header for screens wider than 966px -->
-    <HeaderDesktop v-if="isDesktop" />
-
-    <!-- Render Mobile Header for screens up to 966px -->
-    <HeaderMobile v-else />
-    <!-- <nav>
+    <nav>
         <div class="nav-inner">
-
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
             <div class="logo">
                 <router-link to="/" class="logo-link">
                     <img src="@/assets/Images/logo.png" alt="Website Logo" />
-                </router-link>
-                <div class="hamburger-icon" @click="toggleMobileMenu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
+                </router-link> 
+            </div>
+            <div class="hamburger-icon" @click="toggleMobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             </div>
             <div class="inner-nav" v-if="isOpen">
-
                 <RouterLink to="/"
                     style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">Home
                 </RouterLink>
@@ -33,121 +26,35 @@
                     style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">Men
                 </RouterLink>
             </div>
-
-            <div class="sidebar">
-
+            <div class="sidenav">
                 <RouterLink to="/About" style="text-decoration: none; color: white;">About</RouterLink>
                 <RouterLink to="/Contact" style="text-decoration: none; color: white;">Contact</RouterLink>
                 <RouterLink to="/Amount" style="text-decoration: none; color: white;">$0.00</RouterLink>
-
             </div>
-
         </div>
-    </nav> -->
+    </nav>
 </template>
-
+  
 <script>
-// export default {
-//     data() {
-//         return {
-//             isOpen: false
-//         }
-//     },
-//     methods: {
-//         toggleMobileMenu(e) {
-//             console.log(e)
-//             this.isOpen = !this.isOpen
-//         }
-//     }
-// }
-import HeaderDesktop from "@/components/HeaderDesktop.vue";
-import HeaderMobile from "@/components/HeaderMobile.vue";
-
 export default {
-    components: {
-        HeaderDesktop,
-        HeaderMobile
+    data() {
+        return {
+            isOpen: false
+        };
     },
-    computed: {
-        isDesktop() {
-            return window.innerWidth > 966;
+    methods: {
+        toggleMobileMenu(e) {
+            console.log(e)
+            this.isOpen = !this.isOpen
         }
     }
 }
-
-
 </script>
-
-
-<!-- <style scoped>
-.nav-bar-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.sidebar {
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.hamburger-icon {
-    display: none;
-}
-
-.nav-inner {
-    background-color: rgb(10, 10, 114);
-}
-
-nav .nav-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-}
-
-.logo {
-    padding: 20px;
-}
-
-.nav .nav-inner {
-
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-* {
-
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.inner-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    padding: 0 15px;
-}
-
-.sidebar a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    padding-right: 35px;
-
-}
-
+  
+<style scoped>
 @media only screen and (max-width: 966px) {
+
+
     nav .nav-inner {
         display: flex;
         flex-direction: column;
@@ -157,12 +64,82 @@ nav .nav-inner {
         margin-top: 20px;
     }
 
+    .nav-inner {
+        background-color: rgb(10, 10, 114);
+    }
+.sidenav {
+    text-align: center;
 
-    .sidebar {
-        padding-top: 20px;
+}
+    .sidenav a {
+        /* padding-top: 20px; */
+        /* justify-content: space-between; */
+        padding-left: 20px;
+
     }
 
-    @media only screen and (max-width: 441px) {
+    .hamburger-icon {
+        display: block;
+    }
+
+    .hamburger-icon i {
+        color: white;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    nav .nav-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav .nav-inner .b-navbar-nav {
+        margin-top: 20px;
+    }
+
+    .inner-nav {
+        margin-top: -6px;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        align-self: flex-start;
+    }
+
+    .logo .logo-link {
+        width: 300px;
+        height: auto;
+    }
+
+    .inner-nav {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(10, 10, 114);
+        background-size: cover;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hamburger-icon i {
+        color: white;
+        font-size: 30px;
+        align-self: flex-end;
+
+    }
+
+    .nav .inner-nav {
+        height: 0px;
+    }
+
+}
+
+/* @media only screen and (max-width: 441px) {
         
 
         nav .nav-inner {
@@ -209,5 +186,6 @@ nav .nav-inner {
         .nav .inner-nav {
             height: 0px;
         }
-    }
-}</style> -->
+    }  */
+</style>
+  

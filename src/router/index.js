@@ -2,14 +2,15 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AccessoriesPage from '../views/Accessories.vue'
 import WomenPage from '../views/Women.vue'
-import MenPage from '../views/Men.vue'
+import Store from '../views/Store.vue'
 import AboutUs from '../views/About.vue'
 import ContactUs from '../views/Contact.vue'
 import Amount from '../views/Amount.vue'
 import Home from '../views/HomeView.vue';
-
-
+import Sidebar from '../components/Sidebar.vue'
 import ProductDetails from '../views/ProductDetails.vue';
+
+
 
 
 const router = createRouter({
@@ -36,9 +37,9 @@ const router = createRouter({
       component: WomenPage
     },
     {
-      path: '/Men',
-      name: 'Men',
-      component: MenPage
+      path: '/store',
+      name: 'Store',
+      component: Store
     },
     {
       path: '/About',

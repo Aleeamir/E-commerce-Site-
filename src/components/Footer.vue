@@ -103,11 +103,10 @@ h5 {
   padding-bottom: 5px;
   padding-left: 26px;
   background-color: rgb(10, 10, 114);
-
 }
 
 .footer {
-  background-color: #ecf4f6;
+  background-color: rgb(10, 10, 114);
   color: #150202;
   padding: 20px 0;
   text-align: center;
@@ -157,8 +156,6 @@ h5 {
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
   color: white;
-
-
 }
 
 .links p {
