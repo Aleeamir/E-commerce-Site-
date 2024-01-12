@@ -7,7 +7,6 @@
         </div>
     </div>
 </template>
-
 <script>
 export default {
     props: {
@@ -22,40 +21,29 @@ export default {
     }
 };
 </script>
-  
 <style scoped>
 .pro {
     padding: 20px;
     display: flex;
     flex-direction: row;
-
-
 }
-
 .product-container .pro {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* gap: 30px; */
 }
-
 .product-block {
-    /* width: calc(33.33% - 20px); */
     margin: 10px;
     text-align: center;
 }
-
 .product-block img {
     width: 246px;
     height: 256px;
     object-fit: cover;
     border-radius: 30px;
     overflow: hidden;
-    /* background: none; */
-    /* gap: 50px; */
 }
-
 .product-block h3 {
     margin-top: 30px;
     font-size: 16px;
@@ -64,30 +52,19 @@ export default {
     max-width: 227px;
     text-align: center;
 }
-
 .product-block p {
     margin-top: 20px;
     font-size: 20px;
     color: #888;
 }
-
 @media only screen and (max-width: 600px) {
     .product-block img {
-        /* width: 150px;
-        max-height: 100%;
-        object-fit: cover;
-        border-radius: 75px;
-        padding: 20px;
-        overflow: hidden;
-        cursor: pointer; */
         width: 270px;
         height: 400px;
     }
-
     .product-container .pro {
         align-items: center;
     }
-
     .product-block h3 {
         margin-top: -2px;
         font-size: 16px;
@@ -95,7 +72,6 @@ export default {
         font-family: 'Roboto', sans-serif;
         text-align: center;
     }
-
     .product-block p {
         font-size: 14px;
         color: #888;

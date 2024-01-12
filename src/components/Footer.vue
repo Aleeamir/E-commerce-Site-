@@ -52,9 +52,6 @@ export default {
     </section>
   </footer>
 </template>
-
-
-
 <style scoped>
 .search {
   float: right;
@@ -246,13 +243,16 @@ h5 {
       flex-direction: column;
     }
   }
+
   @media screen and (max-width: 367px) {
     .fifthview h5 {
       font-size: 20px;
     }
+
     .search {
       margin-right: 62px;
     }
+
     .button-1 {
       border-radius: 10rem;
       font-size: 12px;

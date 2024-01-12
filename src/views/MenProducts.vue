@@ -11,7 +11,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   methods: {
@@ -69,30 +68,23 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .pro {
   padding: 20px;
   display: flex;
   flex-direction: row;
-
-
 }
-
 .product-container .pro {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-
 .product-block {
   margin: 10px;
   text-align: center;
 }
-
 .product-block img {
-
   width: 200px;
   max-height: 100%;
   object-fit: cover;
@@ -101,14 +93,12 @@ export default {
   overflow: hidden;
   cursor: pointer;
 }
-
 .product-block h3 {
   margin-top: 10px;
   font-size: 16px;
   color: white;
   font-family: 'Roboto', sans-serif;
 }
-
 .product-block p {
   font-size: 14px;
   color: #888;
@@ -124,11 +114,9 @@ export default {
     overflow: hidden;
     cursor: pointer;
   }
-
   .product-container .pro {
     align-items: center;
   }
-
   .product-block h3 {
     margin-top: -2px;
     font-size: 16px;
@@ -136,7 +124,6 @@ export default {
     font-family: 'Roboto', sans-serif;
     text-align: center;
   }
-
   .product-block p {
     font-size: 14px;
     color: #888;

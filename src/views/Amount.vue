@@ -4,7 +4,6 @@
     <p class="current-amount">${{ currentAmount ? currentAmount.toFixed(2) : '00.0' }}</p>
   </div>
 </template>
-  
 <script>
 export default {
   data() {
@@ -21,13 +20,11 @@ export default {
   text-align: center;
   padding: 20px;
 }
-
 .current-amount {
   font-size: 24px;
   font-weight: bold;
   color: #6e2206;
 }
-
 .amount-page h1 {
   font-size: 40px;
   font-family: 'Roboto', sans-serif;

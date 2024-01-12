@@ -9,10 +9,6 @@ import Amount from '../views/Amount.vue'
 import Home from '../views/HomeView.vue';
 import Sidebar from '../components/Sidebar.vue'
 import ProductDetails from '../views/ProductDetails.vue';
-
-
-
-
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -57,22 +53,6 @@ const router = createRouter({
       component: Amount
     },
     { path: '/product/:id', name: 'productDetails', component: ProductDetails, props: true },
-    // {
-    //   path: '/men',
-    //   name: 'MenProducts',
-    //   component: MenProducts,
-    // },
-    // {
-    //   path: '/women',
-    //   name: 'ProductList',
-    //   component: ProductList,
-    // },
-    // {
-    //   path: '/product/:productId',
-    //   name: 'productDetails',
-    //   component: ProductDetails,
-    // },
-
   ]
 
 })

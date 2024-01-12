@@ -1,4 +1,3 @@
-
 <template>
   <div class="product-container">
     <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
@@ -12,7 +11,6 @@
     </div>
   </div>
 </template>
-  
 <script>
 export default {
   methods: {
@@ -68,10 +66,7 @@ export default {
 <style scoped>
 .pro {
   padding: 20px;
-  /* width: calc(100.33% - 13px); */
-
 }
-
 .product-container .pro {
   display: flex;
   flex-direction: column;
@@ -80,11 +75,9 @@ export default {
 }
 
 .product-block {
-  /* width: calc(33.33% - 20px); */
   margin: 10px;
   text-align: center;
 }
-
 .product-block img {
   width: 200px;
   max-height: 100%;
@@ -94,7 +87,6 @@ export default {
   overflow: hidden;
   cursor: pointer;
 }
-
 .product-block h3 {
   margin-top: 10px;
   font-size: 16px;
@@ -106,7 +98,6 @@ export default {
   font-size: 14px;
   color: #888;
 }
-
 @media only screen and (max-width: 600px) {
   .product-block img {
     width: 150px;
@@ -117,11 +108,9 @@ export default {
     overflow: hidden;
     cursor: pointer;
   }
-
   .product-container .pro {
     align-items: center;
   }
-
   .product-block h3 {
     margin-top: -2px;
     font-size: 16px;
@@ -129,7 +118,6 @@ export default {
     font-family: 'Roboto', sans-serif;
     text-align: center;
   }
-
   .product-block p {
     font-size: 14px;
     color: #888;

@@ -158,7 +158,6 @@ export default {
         font-size: 13px;
         margin-left: 2px;
     }
-
     .brands h1 {
         font-size: 20px;
     }

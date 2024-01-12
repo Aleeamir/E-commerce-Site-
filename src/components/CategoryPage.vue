@@ -11,6 +11,7 @@
   const props = defineProps(['category']);
   
   
+  
   const products = [
     
   ];

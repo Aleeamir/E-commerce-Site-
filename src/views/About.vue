@@ -4,7 +4,6 @@
       <h1>About Our E-Commerce Store</h1>
       <p>Your one-stop destination for quality products and excellent customer service.</p>
     </header>
-
     <section class="company-section">
       <h1>Our store</h1>
       <p>
@@ -22,7 +21,6 @@
     </section>
   </div>
 </template>
-  
 <script>
 export default {
   data() {
@@ -35,11 +33,9 @@ export default {
   },
 };
 </script>
-  
 <style scoped>
 .top h1 {
   font-size: 40px;
-  /* padding-bottom: 60px; */
 }
 
 .about-us {
@@ -48,24 +44,19 @@ export default {
   padding: 20px;
   color: white;
   font-family: 'Roboto', sans-serif;
-  /* font-size: 40px; */
 }
-
 .top {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .company-section,
 .team-section {
   margin-bottom: 40px;
 }
-
 .team-member {
   text-align: center;
   margin-bottom: 20px;
 }
-
 .team-member img {
   width: 229px;
   height: 214px;

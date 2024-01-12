@@ -4,22 +4,17 @@
         <form @submit.prevent="submitForm" class="contact-form">
             <label for="name" style="color: white;">Name:</label>
             <input type="text" id="name" v-model="formData.name" required class="form-input">
-
             <label for="email" style="color: white;">Email:</label>
             <input type="email" id="email" v-model="formData.email" required class="form-input">
-
             <label for="message" style="color: white;">Message:</label>
             <textarea id="message" v-model="formData.message" required class="form-textarea"></textarea>
-
             <button type="submit" class="form-button">Submit</button>
         </form>
-
         <div v-if="submitted" class="confirmation-message">
             <p>Thank you for your message, {{ formData.name }}!</p>
         </div>
     </div>
 </template>
-  
 <script>
 export default {
     data() {
@@ -35,7 +30,6 @@ export default {
     methods: {
         submitForm() {
             console.log('Form submitted:', this.formData);
-
             this.submitted = true;
         },
     },
@@ -52,13 +46,9 @@ export default {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: 'Roboto', sans-serif;
 }
-
-
 .contact-form .label {
     color: white;
-
 }
-
 .form-input,
 .form-textarea {
     width: 100%;
@@ -67,7 +57,6 @@ export default {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
 .form-button {
     background-color: #4caf50;
     color: #fff;
@@ -76,12 +65,10 @@ export default {
     border-radius: 4px;
     cursor: pointer;
 }
-
 .form-button:hover {
     background-color: #edf6ee;
     color: green;
 }
-
 .confirmation-message {
     margin-top: 20px;
     color: #f4f8f4;

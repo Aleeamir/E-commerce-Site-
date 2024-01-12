@@ -2,14 +2,14 @@
     <nav>
         <div class="nav-inner">
             <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
-            <div class="logo">
-                <router-link to="/" class="logo-link">
-                    <img src="@/assets/Images/logo.png" alt="Website Logo" />
-                </router-link> 
-            </div>
-            <div class="hamburger-icon" @click="toggleMobileMenu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+                <div class="logo">
+                    <router-link to="/" class="logo-link">
+                        <img src="@/assets/Images/logo.png" alt="Website Logo" />
+                    </router-link>
+                </div>
+                <div class="hamburger-icon" @click="toggleMobileMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             <div class="inner-nav" v-if="isOpen">
                 <RouterLink to="/"
@@ -34,7 +34,6 @@
         </div>
     </nav>
 </template>
-  
 <script>
 export default {
     data() {
@@ -50,11 +49,8 @@ export default {
     }
 }
 </script>
-  
 <style scoped>
 @media only screen and (max-width: 966px) {
-
-
     nav .nav-inner {
         display: flex;
         flex-direction: column;
@@ -67,15 +63,13 @@ export default {
     .nav-inner {
         background-color: rgb(10, 10, 114);
     }
-.sidenav {
-    text-align: center;
 
-}
+    .sidenav {
+        text-align: center;
+    }
+
     .sidenav a {
-        /* padding-top: 20px; */
-        /* justify-content: space-between; */
         padding-left: 20px;
-
     }
 
     .hamburger-icon {
@@ -130,7 +124,6 @@ export default {
         color: white;
         font-size: 30px;
         align-self: flex-end;
-
     }
 
     .nav .inner-nav {
@@ -186,6 +179,5 @@ export default {
         .nav .inner-nav {
             height: 0px;
         }
-    }  */
-</style>
+    }  */</style>
   
