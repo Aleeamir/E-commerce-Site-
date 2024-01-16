@@ -16,6 +16,7 @@ export default {
   created() {
     this.fetchProductDetails(this.$route.params.id);
   },
+  
   methods: {
     async fetchProductDetails(productId) {
       try {
