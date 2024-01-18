@@ -7,24 +7,20 @@
                 </router-link>
             </div>
             <div class="inner-nav">
-                <RouterLink to="/"
-                    style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">Home
+                <RouterLink to="/">Home
                 </RouterLink>
-                <RouterLink to="/Accessories"
-                    style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">
+                <RouterLink to="/Accessories">
                     Accessories</RouterLink>
-                <RouterLink to="/Women"
-                    style="text-decoration: none; color: white; font-size: 20px;font-family: 'Roboto', sans-serif;">
+                <RouterLink to="/Women">
                     Women
                 </RouterLink>
-                <RouterLink to="/Men"
-                    style="text-decoration: none;font-size: 20px; color: white; font-family: 'Roboto', sans-serif;">Men
+                <RouterLink to="/Men">Men
                 </RouterLink>
             </div>
             <div class="sidenav">
-                <RouterLink to="/About" style="text-decoration: none; color: white;">About</RouterLink>
-                <RouterLink to="/Contact" style="text-decoration: none; color: white;">Contact</RouterLink>
-                <RouterLink to="/Amount" style="text-decoration: none; color: white;">$0.00</RouterLink>
+                <RouterLink to="/About">About</RouterLink>
+                <RouterLink to="/Contact">Contact</RouterLink>
+                <RouterLink to="/Amount">$0.00</RouterLink>
             </div>
         </div>
     </nav>
@@ -78,5 +74,16 @@ nav .nav-inner {
 }
 .nav-inner {
     background-color: rgb(10, 10, 114);
+    
+}
+.inner-nav a{
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.sidenav a {
+    text-decoration: none; 
+    color: white;
 }
 </style>  

@@ -2,10 +2,10 @@
     <!-- Your other content here -->
 
     <!-- Render Desktop Header for screens wider than 966px -->
-    <HeaderDesktop v-if="isDesktop" />
+    <HeaderDesktop />
 
     <!-- Render Mobile Header for screens up to 966px -->
-    <HeaderMobile v-else />
+    <HeaderMobile />
     <!-- <nav>
         <div class="nav-inner">
 

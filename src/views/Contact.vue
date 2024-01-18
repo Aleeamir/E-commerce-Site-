@@ -1,6 +1,6 @@
 <template>
     <div style="padding-bottom: 50px;">
-        <h2>Contact Us</h2>
+       <div class="contact-us"> <h2>Contact Us</h2></div>
         <form @submit.prevent="submitForm" class="contact-form">
             <label for="name" style="color: white;">Name:</label>
             <input type="text" id="name" v-model="formData.name" required class="form-input">
@@ -37,6 +37,12 @@ export default {
 </script>
   
 <style scoped>
+.contact-us h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
 .contact-form {
     max-width: 400px;
     margin: auto;

@@ -1,52 +1,111 @@
-
-/* 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none; 
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-} */
 @font-face {
   font-family: 'Roboto';
   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 }
-/* * {
-  background-image: url(src/assets/Images/bg2.webp);
-} */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border-color: grey;
-  
-   background-image: url("src/assets/Images/bg2.webp");
-   background-repeat: no-repeat;
-} */
 
+.nav-inner-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 966px) {
+  .nav-inner {
+    display: none !important;
+  }
+
+  nav .nav-inner-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav .nav-inner-mobile .b-navbar-nav {
+    margin-top: 20px;
+  }
+
+  .nav-inner-mobile {
+    background-color: rgb(10, 10, 114);
+  }
+
+  .sidenav {
+    text-align: center;
+  }
+
+  .sidenav a {
+    padding-left: 20px;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .hamburger-icon i {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  nav .nav-inner-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav .nav-inner-mobile .b-navbar-nav {
+    margin-top: 20px;
+  }
+
+  .inner-nav {
+    margin-top: -6px;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-self: flex-start;
+  }
+
+  .logo .logo-link {
+    width: 300px;
+    height: auto;
+  }
+
+  .inner-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 10, 114);
+    /* background: transparent; */
+    background-size: cover;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hamburger-icon i {
+    color: white;
+    font-size: 30px;
+    align-self: flex-end;
+  }
+
+  .nav .inner-nav {
+    height: 0px;
+  }
+  .inner-nav a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    border-top: 1px solid black;
+  }
+  .sidenav a {
+    text-decoration: none; 
+    color: white;
+  }
+  .inner-nav a:hover {
+    background-color: #0d6efd;
+    color: white;
+  }
+
+}
