@@ -5,7 +5,7 @@
         </div>
         <div class="upper">
             <div class="upper-text">
-                <h1>Here are all brands available for Men</h1>
+                <h1>Here are all available accessories</h1>
                 <p>
                     Indulge in elegance and empowerment with our curated collection of female products at our store.
                     Discover

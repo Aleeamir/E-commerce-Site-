@@ -7,6 +7,7 @@ import AboutUs from '../views/About.vue'
 import ContactUs from '../views/Contact.vue'
 import Amount from '../views/Amount.vue'
 import Home from '../views/HomeView.vue';
+import Men from '../views/Men.vue'
 import Sidebar from '../components/Sidebar.vue'
 import ProductDetails from '../views/ProductDetails.vue';
 const router = createRouter({
@@ -31,6 +32,11 @@ const router = createRouter({
       path: '/Women',
       name: 'Women',
       component: WomenPage
+    },
+    {
+      path: '/Men',
+      name: 'men',
+      component: Men
     },
     {
       path: '/store',
