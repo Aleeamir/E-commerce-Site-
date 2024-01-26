@@ -1,32 +1,32 @@
 <template>
     <nav>
         <div class="nav-inner-mobile">
-                <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
-                    <div class="logo">
-                        <router-link to="/" class="logo-link">
-                            <img src="@/assets/Images/logo.png" alt="Website Logo" />
-                        </router-link>
-                    </div>
-                    <div class="hamburger-icon" @click="toggleMobileMenu">
-                        <i class="fa-solid fa-bars"></i>
-                    </div>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between;">
+                <div class="logo">
+                    <router-link to="/" class="logo-link">
+                        <img src="@/assets/Images/logo.png" alt="Website Logo" />
+                    </router-link>
                 </div>
-                <div class="inner-nav" v-if="isOpen">
-                    <RouterLink to="/">Home
-                    </RouterLink>
-                    <RouterLink to="/Accessories">
-                        Accessories</RouterLink>
-                    <RouterLink to="/Women">
-                        Women
-                    </RouterLink>
-                    <RouterLink to="/Men">Men
-                    </RouterLink>
+                <div class="hamburger-icon" @click="toggleMobileMenu">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="sidenav">
-                    <RouterLink to="/About">About</RouterLink>
-                    <RouterLink to="/Contact">Contact</RouterLink>
-                    <RouterLink to="/Amount">$0.00</RouterLink>
-                </div>
+            </div>
+            <div class="inner-nav" v-if="isOpen">
+                <RouterLink to="/">Home
+                </RouterLink>
+                <RouterLink to="/Accessories">
+                    Accessories</RouterLink>
+                <RouterLink to="/Women">
+                    Women
+                </RouterLink>
+                <RouterLink to="/Men">Men
+                </RouterLink>
+            </div>
+            <div class="sidenav">
+                <RouterLink to="/About">About</RouterLink>
+                <RouterLink to="/Contact">Contact</RouterLink>
+                <RouterLink to="/Amount">$0.00</RouterLink>
+            </div>
         </div>
     </nav>
 </template>

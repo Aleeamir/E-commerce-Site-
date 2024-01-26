@@ -96,8 +96,8 @@ h5 {
 
 .fifthview {
   margin-top: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 16px;
+  padding-bottom: 11px;
   padding-left: 26px;
   background-color: rgb(10, 10, 114);
 }

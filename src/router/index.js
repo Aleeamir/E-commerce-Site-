@@ -58,7 +58,10 @@ const router = createRouter({
       name: 'Amount',
       component: Amount
     },
-    { path: '/product/:id', name: 'productDetails', component: ProductDetails, props: true },
+    { path: '/product/:id', 
+    name: 'productDetails', 
+    component: ProductDetails, 
+    props: true },
   ]
 
 })

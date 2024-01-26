@@ -40,9 +40,10 @@ export default {
 .product-block img {
     width: 246px;
     height: 256px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-radius: 30px;
     overflow: hidden;
+    object-fit: contain;
 }
 .product-block h3 {
     margin-top: 30px;

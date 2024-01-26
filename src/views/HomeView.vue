@@ -11,7 +11,7 @@
                         More</button></router-link>
             </div>
             <div class="image-container">
-                <div class="image-wrapper">
+                <div class="image-wrapper" style="object-fit: cover; object-position: right;">
                     <img src="https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/women-fashion-free-img.jpg"
                         alt="Image 1">
                 </div>

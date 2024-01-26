@@ -1,10 +1,6 @@
 <template>
-    <!-- Your other content here -->
-
-    <!-- Render Desktop Header for screens wider than 966px -->
     <HeaderDesktop />
 
-    <!-- Render Mobile Header for screens up to 966px -->
     <HeaderMobile />
     <!-- <nav>
         <div class="nav-inner">
@@ -41,7 +37,6 @@
                 <RouterLink to="/Amount" style="text-decoration: none; color: white;">$0.00</RouterLink>
 
             </div>
-
         </div>
     </nav> -->
 </template>
